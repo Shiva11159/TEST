@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette4"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tblTop10List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="?attr/selectableItemBackground"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@color/white"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_6">
+
+                <TextView
+                    android:id="@+id/txtSquadName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lreg"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Player Name"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                    android:id="@+id/txtSquadtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/lreg"
+                    android:gravity="left|center"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="10dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:id="@+id/txtteamname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lreg"
+                    android:padding="@dimen/dimen_12"
+
+                    android:text="IND"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/dimen_14" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

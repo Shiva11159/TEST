@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/palette4"
+    android:layout_height="match_parent"
+    android:id="@+id/nest_scrollview"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="20dp"
+            app:tabSelectedTextColor="@color/white"
+
+            android:layout_marginRight="20dp"
+            android:background="@drawable/roundtab1"
+            app:tabGravity="fill"
+            app:tabInlineLabel="true"
+            app:tabIndicator="@drawable/roundtab2"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="stretch"
+            app:tabIndicatorHeight="54dp"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/black" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpPager"
+            style="@style/viewpager"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

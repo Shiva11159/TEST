@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/roundrectangle"
+    android:gravity="center"
+    android:minWidth="320dp"
+    android:minHeight="25dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtplayername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lreg"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/dimen_14" />
+
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:drawableTint="@color/black"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtplayername"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/palette4"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tblTop10List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackground"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_shade">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lreg"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Batting style"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_12" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lreg"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Bowling style"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_12" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_shade">
+
+                    <TextView
+                        android:id="@+id/txtbattingstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:fontFamily="@font/lreg"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_12"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/txtbowlingstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:fontFamily="@font/lreg"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_12"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_12" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    >
+
+</RelativeLayout>
