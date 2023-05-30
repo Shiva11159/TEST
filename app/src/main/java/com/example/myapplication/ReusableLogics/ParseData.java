@@ -2,6 +2,7 @@ package com.example.myapplication.ReusableLogics;
 
 import static com.example.myapplication.ReusableLogics.Logics.arrayListTeamnames;
 import static com.example.myapplication.ReusableLogics.Logics.teamsInningsArrayList;
+import static com.example.myapplication.ReusableLogics.Logics.teamsSquadArrayList;
 
 import android.content.Context;
 import android.util.Log;

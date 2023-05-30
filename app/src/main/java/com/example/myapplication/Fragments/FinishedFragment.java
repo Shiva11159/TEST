@@ -51,8 +51,8 @@ public class FinishedFragment extends Fragment {
     String err = "";
     View view;
     ProgressBar progressBar;
-    TextView txt_location1, txt_result, txt_league, txt_team1, txt_team2,txthightlight;
-    CardView cardview,cardviewhighlight;
+    TextView txt_location1, txt_result, txt_league, txt_team1, txt_team2, txthightlight;
+    CardView cardview, cardviewhighlight;
 
     Call<JsonObject> call;
     static int i = 0;
@@ -68,6 +68,13 @@ public class FinishedFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.e("aaonCreate: ", "hi");
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
     }
 
     @Override
@@ -248,7 +255,13 @@ public class FinishedFragment extends Fragment {
     }
 
 
-
+    @Override
+    public void setUserVisibleHint(boolean visible) {
+        super.setUserVisibleHint(visible);
+        if (visible && isResumed()) {
+            NetworkCall();
+        }
+    }
 }
 
 

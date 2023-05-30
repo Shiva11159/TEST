@@ -174,7 +174,7 @@ public class FinishedFragment1 extends Fragment {
                             JSONArray Innings = jsonObject.getJSONArray("Innings");
                             JSONObject Teams = jsonObject.getJSONObject("Teams");
 
-                            Log.e("Nuggets", Nuggets.toString());
+                            Log.e("Teams", Teams.toString());
                             // notes tag .
                             Logics.arrayListNuggets.clear();
                             parseJsonNuggets(Nuggets);
@@ -257,6 +257,13 @@ public class FinishedFragment1 extends Fragment {
     }
 
 
+    @Override
+    public void setUserVisibleHint(boolean visible) {
+        super.setUserVisibleHint(visible);
+        if (visible && isResumed()) {
+            NetworkCall();
+        }
+    }
 }
 
 

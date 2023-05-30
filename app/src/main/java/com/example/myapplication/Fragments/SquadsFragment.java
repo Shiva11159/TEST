@@ -56,7 +56,7 @@ public class SquadsFragment extends Fragment implements CallBack {
 //        Log.e("onCreateView: ", String.valueOf(teamsInningArrayList.size()));
 
 
-        Logics.runAnimation(recyclview,teamSquadAdapter,getActivity());
+       // Logics.runAnimation(recyclview,teamSquadAdapter,getActivity());
 
         return view;
     }
